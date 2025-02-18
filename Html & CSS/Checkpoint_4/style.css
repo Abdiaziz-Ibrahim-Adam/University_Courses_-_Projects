@@ -1,0 +1,207 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Wrapper */
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: #f0f0f0;
+}
+
+.wrapper {
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    padding: 0 20px;
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-height: 80px;
+}
+
+.nav {
+    display: flex;
+    gap: 20px;
+}
+
+.nav li {
+    list-style: none;
+}
+
+.nav li a {
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: #2c3e50;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.3s;
+    font-size: 1rem;
+}
+
+.nav li a:hover {
+    background-color: #34495e;
+    color: yellow;
+}
+
+.nav li a:active {
+    color: red;
+}
+
+/* Hero Section */
+.hero {
+    height: 300px;
+    background-image: url('./images/BKG_Bild.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 50px 0;
+}
+
+.hero h1 {
+    color: black;
+    font-size: 2.5rem;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Grid Layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin-bottom: 50px;
+}
+
+.grid-item {
+    text-align: center;
+    background-color: hsl(210, 100%, 95%);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    /* Kontrast-ratio: 12.28 enligt WCAG */
+}
+
+/* För rubriker */
+.grid-item h2 {
+    margin-bottom: 15px; /* Avstånd till ingress */
+}
+
+/* För ingresstext */
+.grid-item .ingress {
+    margin-bottom: 20px; /* Avstånd till nästa textstycke */
+}
+
+/* För textstycken */
+.grid-item p {
+    margin-bottom: 15px; /* Avstånd mellan textstycken */
+    line-height: 1.5; /* Gör texten mer lättläst */
+}
+
+.circle-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+    border: 5px solid #ddd;
+}
+
+.ingress {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: #ffd700;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "footer-address footer-navigation footer-quote";
+    gap: 2rem;
+}
+
+.footer-address {
+    grid-area: footer-address;
+}
+
+.footer-navigation {
+    grid-area: footer-navigation;
+    text-align: left; /* Justera texten till vänster */
+    color: #ffd700; /* Gul färg */
+}
+
+
+.footer-navigation h3 {
+    font-size: 1.2rem;
+    font-weight: bold; /* Gör rubriken fet */
+    margin-bottom: 15px; /* Mellanrum till listan */
+}
+
+.footer-navigation ul {
+    list-style: disc; /* Lägg till punktlista */
+    padding-left: 20px; /* Gör plats för punktlistan */
+}
+
+.footer-navigation li {
+    margin-bottom: 10px; /* Mellanrum mellan listobjekt */
+}
+
+.footer-navigation a {
+    text-decoration: none; /* Ta bort understrykning */
+    color: #ffd700; /* Gul färg på länkar */
+    font-size: 1rem; /* Normal textstorlek */
+}
+
+.footer-quote {
+    grid-area: footer-quote;
+}
+
+.footer p,
+.footer a {
+    font-size: 1rem;
+    color: #ffd700;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiv layout */
+@media screen and (max-width: 1320px) {
+    .wrapper {
+        max-width: 100%;
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .grid-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .footer {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "footer-address footer-address"
+            "footer-navigation footer-quote";
+    }
+}

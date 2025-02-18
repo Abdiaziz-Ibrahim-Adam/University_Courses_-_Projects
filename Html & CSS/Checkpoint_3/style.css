@@ -1,0 +1,146 @@
+/* Box model */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: #f0f0f0; /* Light gray background outside wrapper */
+    font-family: Arial, sans-serif; /* Sans-serif font */
+}
+
+/* Wrapper */
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: white; /* Ensure the wrapper has a white background */
+    padding: 20px;
+}
+
+/* Header */
+header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+header img {
+    max-height: 100px;
+    max-width: 300px;
+    display: block;
+}
+
+/* Navigation */
+nav ul {
+    display: flex; /* Gör listan horisontell */
+    justify-content: flex-start; /* Justera till vänster */
+    list-style-type: none; /* Tar bort punktlistan */
+    padding: 0; /* Tar bort extra padding */
+    margin: 10px 0 0 0; /* Lägg till marginal ovanför */
+}
+
+nav ul li {
+    margin: 0; /* Ingen extra marginal mellan listobjekten */
+}
+
+nav ul li a {
+    text-decoration: none; /* Tar bort understrykning */
+    color: blue; /* Länkfärg */
+    font-size: 1rem; /* Textstorlek */
+    padding: 0 1rem; /* 1rem padding i sidled, 0 i höjdled */
+    display: block; /* Gör hela länken klickbar */
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Understrykning vid hover */
+}
+
+/* Articles */
+article {
+    margin-bottom: 40px;
+    background-color: white; 
+    padding: 15px;
+    border-radius: 3px;
+}
+
+article header h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+article section {
+    margin-bottom: 15px;
+}
+
+article section h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.ingress {
+    font-weight: bold; /* Bold ingress text */
+    margin-bottom: 10px;
+}
+
+.article-footer {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-style: italic;
+    color: #000;
+    text-align: left; /* Left-aligned */
+}
+
+/* Sidebar */
+aside {
+    background-color: white;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+aside h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+aside ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Footer */
+.page-footer {
+    text-align: center;
+    background-color: #333; /* Dark gray background for footer */
+    color: #ffd700; /* Yellow text */
+    font-size: 2rem;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 920px) {
+    .wrapper {
+        width: 100%;
+    }
+}
+
+/* Print Styling */
+@media print {
+    nav, aside {
+        display: none;
+    }
+    body {
+        font-family: serif;
+    }
+    p {
+        font-size: 12pt;
+    }
+}
+
+/* Kommentar: Skillnaden mellan em och rem:
+em baseras på storleken hos det närmast ärvda elementet medan rem baseras på rotstorleken (html). Det gör rem mer konsekvent. */
