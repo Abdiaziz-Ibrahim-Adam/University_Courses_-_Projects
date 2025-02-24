@@ -12,7 +12,7 @@
 * Time Complexity:
    - Sorting takes O(N log N)
    - Checking triplets takes O(N)
-   - **Total Complexity: O(N log N)
+   - Total Complexity: O(N log N)
 """
 
 def can_build_triangle(sticks):
