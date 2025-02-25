@@ -10,9 +10,7 @@ Welcome to my repository showcasing a collection of projects completed during my
 
 - [Overview](#overview)
 - [Projects](#projects)
-- [Contributing](#contributing)
 - [License](#license)
-- [Contact](#contact)
 
 ---
 
@@ -26,15 +24,11 @@ This repository is a curated collection of my university courses and projects, c
 
 Below is a list of the projects included in this repository:
 
-- **Solved Katis Problems**  
-  *Date: Feb 24, 2025*  
-  A set of solutions for problems given in the Katis course.
-
 - **Applied Algorithmic Problem Solving Course**  
   *Date: Feb 24, 2025*  
   Projects focused on algorithmic problem solving.
 
-- **Datastructeres and Algorithms / Huffman Project**  
+- **Datastructeres and Algorithms**  
   *Date: Feb 18, 2025*  
   Implementation of the Huffman coding algorithm.
 
@@ -42,7 +36,7 @@ Below is a list of the projects included in this repository:
   *Date: Feb 18, 2025*  
   A collection of exercises and projects focused on web development using HTML and CSS.
 
-- **Introduction to Databases Course**  
+- **Introduction to Database management Course**  
   *Date: Feb 18, 2025*  
   SQL exercises and projects exploring database concepts.
 
@@ -50,7 +44,7 @@ Below is a list of the projects included in this repository:
   *Date: Feb 18, 2025*  
   Java projects and coding exercises centered on OOP principles.
 
-- **Software Testing Course / Lab_1**  
+- **Software Testing Course**  
   *Date: Feb 18, 2025*  
   A lab project emphasizing software testing methodologies.
 
@@ -62,20 +56,6 @@ For detailed information about each project, please refer to the individual READ
 
 ---
 
-## Contributing
-
-Contributions are welcome! To contribute:
-
-1. **Fork the repository.**
-2. **Create a new branch:**  
-   `git checkout -b feature/YourFeature`
-3. **Make your changes and commit them:**  
-   `git commit -m "Add some feature"`
-4. **Push to your branch:**  
-   `git push origin feature/YourFeature`
-5. **Open a pull request.**
-
-If you encounter any issues or have suggestions, please open an issue.
 
 ---
 
@@ -85,9 +65,6 @@ This project is licensed under the [Apache-2.0 License](LICENSE).
 
 ---
 
-## Contact
-
-For any questions or additional information, feel free to reach out via email: [your-email@example.com].
 
 ---
 
